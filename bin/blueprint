@@ -1,0 +1,25 @@
+#!/usr/bin/python
+
+import sys
+import argparse
+from blueprint import run
+
+parser = argparse.ArgumentParser(description="Check your api", add_help=True)
+parser.add_argument("-f", "--file", help="Checks json file")
+
+if len(sys.argv) <= 1:
+    parser.print_help()
+    sys.exit(1)
+
+args = parser.parse_args()
+
+if args.file:
+    status = run(args.file)
+    if status:
+        sys.exit(0)
+    else:
+        sys.exit(2)
+
+else:
+    print("No checks file")
+    sys.exit(1)

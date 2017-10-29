@@ -1,0 +1,21 @@
+{
+    "cases": [
+        {
+            "url": "http://jsonplaceholder.typicode.com/posts/1",
+            "method": "GET",
+            "checks": [
+                {
+                    "name": "check post",
+                    "description": "Tests the post structure",
+                    "check": {
+                        "type": "object",
+                        "properties": {
+                            "userId": {"type": "number"},
+                            "id": {"type": "number"}
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}
