@@ -1,4 +1,6 @@
 ## Blueprint
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fsourcepirate%2FBlueprint.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fsourcepirate%2FBlueprint?ref=badge_shield)
+
 
 There are many ways to test our production and development json REST api's. 
 There are various cases our api's behave differently based on our application state, A developer may want to test various cases in these apis. By combining standed http request with json schema validation provides good procedure to these apis.
@@ -58,3 +60,6 @@ Using blueprint need a json config file which lists all checks to be performed a
 ## License
 
 MIT
+
+
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fsourcepirate%2FBlueprint.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fsourcepirate%2FBlueprint?ref=badge_large)
